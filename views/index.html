@@ -1,0 +1,82 @@
+<!-- Code adapted from introduction to bootstrap and navbar example code from bootstrap -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trace Rindal | Universal Design</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light" aria-label="Main navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Trace Rindal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" tabindex="-1" aria-disabled="true"
+              aria-label="Assignment 1 (not yet available)">Assignment 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" tabindex="-1" aria-disabled="true"
+              aria-label="Assignment 2 (not yet available)">Assignment 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" tabindex="-1" aria-disabled="true"
+              aria-label="Assignment 3 (not yet available)">Assignment 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- content adapted from a previous about me I wrote for software development methods (CSCI 3308)-->
+  <main class="flex-grow-1">
+    <div class="container mt-5">
+      <!-- Visible Page Title -->
+      <header class="mb-4 border-bottom pb-2">
+        <h1 class="h3 text-muted">About Me</h1>
+      </header>
+
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="../resources/img/trace_climbing_tomahawk.png" class="img-fluid square border shadow-sm"
+            alt="Trace Rindal climbing on Tomahawk at Lincoln Lake Mt. Blue Sky">
+        </div>
+
+        <div class="col-md-8">
+          <!-- Changed to h2 under the main h1 -->
+          <h2 class="display-5">Hi, I'm Trace</h2>
+          <p class="lead">
+            I am a senior at the University of Colorado studying Computer Science.
+            I’m passionate about game development, low-level systems, and rock climbing.
+          </p>
+          <p>
+            Currently, I work as a Course Assistant for the CS department and
+            spend my free time experimenting with the Godot engine and audio programming.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

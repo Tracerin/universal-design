@@ -4,23 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semantic Basics</title>
+    <style>
+        .sr-only {
+            border: 0;
+            clip: rect(0,0,0,0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <!-- main heading - only use h1 once per page -->
         <h1>Semantic Basics</h1>   
     </header>
+
     <nav>
         <h2>Main Navigation</h2>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="semantic-basics.html">Semantic Basics</a></li>
+            <li><a href="#semantic-elements">Semantic Elements</a></li>
         </ul>
     </nav>
+
     <!-- main content of the page -->
     <main>
+
         <!-- semantic grouping of content -->
-        <section>
+        <section id="semantic-elements">
             <h2>Semantic Elements</h2>
             <p>This is a paragraph about semantic elements</p>
 
@@ -29,6 +47,24 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quisquam mollitia adipisci quae impedit deserunt dignissimos cumque nisi, odit, aliquid fugit voluptas, corrupti veniam perferendis eius quasi dolor alias optio.</p>
 
         </section>
+
+        <section id="rock">
+            <h2>Rock Image</h2>
+            <figure>
+                <img src="resources/img/rock.jpg" alt ="rock from lincoln lake">
+                <figcaption>Rock from Lincoln Lake</figcaption>
+            </figure>
+        </section>
+
+        <aside>
+            <h2>Additional Information</h2>
+            <p>This is additional information about the rock.</p>
+        </aside>
+
+        <footer>
+            <p>designed by me</p>
+        </footer>
+
     </main>
 </body>
 </html>
